@@ -9,7 +9,7 @@ import './App.css'
 import {Routes,Route} from "react-router-dom";
 import axios from "axios";
 import IndexPage from "./pages/IndexPage.tsx";
-import Layout from "./layouts/Layout.tsx";
+import ProfilePage from "./pages/ProfilePage.tsx";
 
 
 axios.defaults.baseURL='http://localhost:4000';
@@ -19,9 +19,10 @@ function App() {
 
     return (
         <Routes>
-            <Route path="/" element={<Layout/>}>
+
                 <Route index element={<IndexPage/>}/>
-            </Route>
+                <Route path="/profile" element={<ProfilePage/>}/>
+                <Route path="/profile/:subpage?" element={<ProfilePage/>}/>
 
         </Routes>
 

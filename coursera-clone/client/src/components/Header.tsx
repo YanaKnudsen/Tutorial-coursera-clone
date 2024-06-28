@@ -5,7 +5,7 @@ import { faChevronDown, faMagnifyingGlass,faBars } from '@fortawesome/free-solid
 function Header() {
 
     return (
-        <header className="w-full justify-between flex px-7 items-center sticky">
+        <header className="w-full justify-between flex px-7 py-3 items-center sticky">
             <div className="flex lg:hidden">
                 <button><FontAwesomeIcon className="w-4 h-4" icon={faBars} /></button>
             </div>
